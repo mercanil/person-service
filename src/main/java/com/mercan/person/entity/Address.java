@@ -101,4 +101,16 @@ public class Address {
         this.person = person;
     }
 
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", person=" + person +
+                '}';
+    }
 }

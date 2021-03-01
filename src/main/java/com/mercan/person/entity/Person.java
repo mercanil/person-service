@@ -2,7 +2,6 @@ package com.mercan.person.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -25,7 +24,7 @@ public class Person {
     @Size(max = 250)
     private String lastName;
 
-    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER , cascade = CascadeType.ALL , orphanRemoval = true)
     private Set<Address> address;
 
 
@@ -71,4 +70,13 @@ public class Person {
         this.address = address;
     }
 
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }
