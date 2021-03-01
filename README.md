@@ -16,7 +16,7 @@ Packer developed with Java 8, a number of technologies and open source projects:
 
 
 ###  How to use (For Maven Projects)
-[Packer] requires [JDK8]. Please check your JAVA_HOME for success of build.
+requires [JDK8]. Please check your JAVA_HOME for success of build.
 ```sh
 $ echo ${JAVA_HOME}
 ```
@@ -37,3 +37,4 @@ $ mvn clean install
 [Lombok]: <https://projectlombok.org/>
 [Assertj]: <https://joel-costigliola.github.io/assertj/>
 [SLF4J]: <https://www.slf4j.org/>
+[Spring Boot]: <https://spring.io/projects/spring-boot>
