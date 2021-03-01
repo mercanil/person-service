@@ -26,6 +26,8 @@ This is a maven project. Install in your local maven repository:
 $ cd ${project.basedir}
 $ mvn clean install
 ```
+Please check all endpoints
+localhost:8080/swagger-ui.html
 
 
 
